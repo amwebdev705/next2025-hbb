@@ -33,7 +33,8 @@ export default function StripeForm({
       .confirmPayment({
         elements,
         confirmParams: {
-          return_url: `${SERVER_URL}/checkout/${orderId}/stripe-payment-success`,
+          // return_url: `${SERVER_URL}/checkout/${orderId}/stripe-payment-success`,
+          return_url: `${SERVER_URL.startsWith('http') ? SERVER_URL : `https://${SERVER_URL}`}/checkout/${orderId}/stripe-payment-success`,
         },
       })
       .then(({ error }) => {
