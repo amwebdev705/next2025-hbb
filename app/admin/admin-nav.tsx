@@ -26,10 +26,10 @@ const links = [
     title: 'Pages',
     href: '/admin/web-pages',
   },
-  {
-    title: 'Carousel',
-    href: '/admin/carousels',
-  },
+  // {
+  //   title: 'Carousel',
+  //   href: '/admin/carousels',
+  // },
   {
     title: 'Settings',
     href: '/admin/settings',
